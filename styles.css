@@ -1,0 +1,110 @@
+body {
+        overflow: hidden; 
+        background-color: rgb(24, 24, 24);
+        color: darkgray;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        color: rgb(169, 169, 169);
+        font-weight: 1000;
+    }
+
+    a {
+        color: rgb(100, 209, 245);
+    }
+    
+    li{
+        color: rgba(255, 255, 255, 0.874);
+        font-weight: bold;
+    }
+
+    .content {
+        display: flex;
+        gap: 15px;
+    }
+
+    .education, .laboral_experience, .abilities {
+        flex: 1;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+    }
+    .CV-Text{
+        position: absolute;
+        top: 12px;
+        right: 370px; 
+    }
+    .name{
+        display: flex; 
+        transform: translateY(-15px);
+        justify-content: left;
+    }
+
+    .circles-container {
+        display: flex;
+        gap: 15px;
+        margin-left: -250px;
+        align-items: center;
+    }
+
+    .personal-info-container {
+        display: flex;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .personal-text {
+        flex: 1;
+        
+    }
+
+    .circle-1 {
+        width: 100px; /* Tamaño del círculo */
+        height: 100px; /* Tamaño del círculo */
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-left: 20px; 
+        display: flex; /* Centrar el contenido */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        overflow: hidden; /* Ocultar el desbordamiento */
+    }
+
+    .circle-2 {
+        transform: translateX(-400%);
+        width: 100px; /* Tamaño del círculo */
+        height: 100px; /* Tamaño del círculo */
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-left: 20px; 
+        display: flex; /* Centrar el contenido */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        overflow: hidden; /* Ocultar el desbordamiento */
+    }
+
+    .Developed-by-text{
+        font-size: 13.5px;
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        display: flex; /* Centrar el contenido */
+    }
+
+    .circle-1 img {
+        width: 60%; /* Ajustar el ancho de la imagen */
+        height: 60%; /* Ajustar la altura de la imagen */
+        object-fit: contain; /* Mantener la proporción de la imagen */
+    }
+
+    .circle-2 img {
+        width: 80%; /* Ajustar el ancho de la imagen */
+        height: 80%; /* Ajustar la altura de la imagen */
+        object-fit: contain; /* Mantener la proporción de la imagen */
+    }
+    
+    .java-logo {
+        width: 120%;
+        height: 120%;
+    }
