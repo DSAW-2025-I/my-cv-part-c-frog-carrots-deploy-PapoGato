@@ -1,110 +1,142 @@
+/* Estilos generales */
 body {
-        overflow: hidden; 
-        background-color: rgb(24, 24, 24);
-        color: darkgray;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    }
+    overflow-x: hidden;
+    background-color: rgb(24, 24, 24);
+    color: darkgray;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
 
-    h1, h2, h3 {
-        color: rgb(169, 169, 169);
-        font-weight: 1000;
-    }
+h1, h2, h3 {
+    color: rgb(169, 169, 169);
+    font-weight: 1000;
+}
 
-    a {
-        color: rgb(100, 209, 245);
-    }
-    
-    li{
-        color: rgba(255, 255, 255, 0.874);
-        font-weight: bold;
-    }
+a {
+    color: rgb(100, 209, 245);
+}
 
+li {
+    color: rgba(255, 255, 255, 0.874);
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.education, .laboral_experience, .abilities {
+    flex: 1;
+    min-width: 280px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.CV-Text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sección de información personal */
+.personal-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Estilos de los círculos */
+.circles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.circle-1, .circle-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle-1 img, .circle-2 img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.Developed-by-text {
+    font-size: 13.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 1024px) {
     .content {
-        display: flex;
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .education, .laboral_experience, .abilities {
-        flex: 1;
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-    }
-    .CV-Text{
-        position: absolute;
-        top: 12px;
-        right: 370px; 
-    }
-    .name{
-        display: flex; 
-        transform: translateY(-15px);
-        justify-content: left;
-    }
-
-    .circles-container {
-        display: flex;
-        gap: 15px;
-        margin-left: -250px;
-        align-items: center;
+        width: 90%;
     }
 
     .personal-info-container {
-        display: flex;
-        align-items: center;
-        width: 100%; 
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .circles-container {
+        justify-content: center;
     }
 
-    .personal-text {
-        flex: 1;
-        
+    .circle-1, .circle-2 {
+        width: 80px;
+        height: 80px;
     }
 
-    .circle-1 {
-        width: 100px; /* Tamaño del círculo */
-        height: 100px; /* Tamaño del círculo */
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        margin-left: 20px; 
-        display: flex; /* Centrar el contenido */
-        align-items: center; /* Centrar verticalmente */
-        justify-content: center; /* Centrar horizontalmente */
-        overflow: hidden; /* Ocultar el desbordamiento */
+    .circle-1 img, .circle-2 img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .CV-Text h1, .name h1 {
+        font-size: 1.5em;
     }
 
-    .circle-2 {
-        transform: translateX(-400%);
-        width: 100px; /* Tamaño del círculo */
-        height: 100px; /* Tamaño del círculo */
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        margin-left: 20px; 
-        display: flex; /* Centrar el contenido */
-        align-items: center; /* Centrar verticalmente */
-        justify-content: center; /* Centrar horizontalmente */
-        overflow: hidden; /* Ocultar el desbordamiento */
+    .education, .laboral_experience, .abilities {
+        width: 100%;
     }
 
-    .Developed-by-text{
-        font-size: 13.5px;
-        align-items: center; /* Centrar verticalmente */
-        justify-content: center; /* Centrar horizontalmente */
-        display: flex; /* Centrar el contenido */
+    .circle-1, .circle-2 {
+        width: 60px;
+        height: 60px;
     }
-
-    .circle-1 img {
-        width: 60%; /* Ajustar el ancho de la imagen */
-        height: 60%; /* Ajustar la altura de la imagen */
-        object-fit: contain; /* Mantener la proporción de la imagen */
-    }
-
-    .circle-2 img {
-        width: 80%; /* Ajustar el ancho de la imagen */
-        height: 80%; /* Ajustar la altura de la imagen */
-        object-fit: contain; /* Mantener la proporción de la imagen */
-    }
-    
-    .java-logo {
-        width: 120%;
-        height: 120%;
-    }
+}
