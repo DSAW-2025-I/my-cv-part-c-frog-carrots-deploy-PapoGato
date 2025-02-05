@@ -85,3 +85,7 @@ section {
 - Experimenta con combinaciones de colores que sean agradables a la vista.
 
 ¡Buena suerte y diviértanse creando su CV!
+
+![Sapitos](https://github.com/DSAW-2025-I/my-cv-part-c-frog-carrots-deploy-PapoGato/blob/bd00688c35ede668a2ea30fe63c4329ec4536087/sapitos%20css.jpg)
+![Jardín](https://github.com/DSAW-2025-I/my-cv-part-c-frog-carrots-deploy-PapoGato/blob/bd00688c35ede668a2ea30fe63c4329ec4536087/jard%C3%ADn%20css.jpg)
+
