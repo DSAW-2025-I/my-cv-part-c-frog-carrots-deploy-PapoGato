@@ -89,3 +89,4 @@ section {
 ![Sapitos](https://github.com/DSAW-2025-I/my-cv-part-c-frog-carrots-deploy-PapoGato/blob/bd00688c35ede668a2ea30fe63c4329ec4536087/sapitos%20css.jpg)
 ![Jardín](https://github.com/DSAW-2025-I/my-cv-part-c-frog-carrots-deploy-PapoGato/blob/bd00688c35ede668a2ea30fe63c4329ec4536087/jard%C3%ADn%20css.jpg)
 
+Link a mi CV (publicado): https://dsaw-2025-i.github.io/my-cv-part-c-frog-carrots-deploy-PapoGato/
